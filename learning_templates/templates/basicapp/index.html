@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <h1>This is index.html page showing!</h1>
+    <!-- We use | operator to add template filters -->
+    <h1>{{ text |cut:'hello' }}</h1>
+
+    <!-- add function is another template filter -->
+    <h1>{{ number | add:"99" }}</h1>
+    {% endblock %}
